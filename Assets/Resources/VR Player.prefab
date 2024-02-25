@@ -108,12 +108,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315796314851182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4736743072354544}
+  m_Father: {fileID: 4098411418399560}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114397248209533090
@@ -221,8 +221,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4098411418399560}
-  - {fileID: 4258753728346310}
-  - {fileID: 4369254572010764}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,9 +250,9 @@ MonoBehaviour:
     component: {fileID: 114272718057082298}
   _childViews:
   - componentID: 1
-    component: {fileID: 114098979720017432}
+    component: {fileID: 0}
   - componentID: 2
-    component: {fileID: 114397248209533090}
+    component: {fileID: 0}
   - componentID: 3
     component: {fileID: 114142483780946230}
 --- !u!114 &114800176784454794
@@ -315,12 +313,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677690864260768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4736743072354544}
+  m_Father: {fileID: 4098411418399560}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114098979720017432
@@ -397,6 +395,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4187294060141768}
+  - {fileID: 4258753728346310}
+  - {fileID: 4369254572010764}
   - {fileID: 8416000071600744567}
   m_Father: {fileID: 4736743072354544}
   m_RootOrder: 0
@@ -425,7 +425,11 @@ MonoBehaviour:
     component: {fileID: 114852635989410700}
   - componentID: 2
     component: {fileID: 114483422340737214}
-  _childViews: []
+  _childViews:
+  - componentID: 1
+    component: {fileID: 114098979720017432}
+  - componentID: 2
+    component: {fileID: 114397248209533090}
 --- !u!114 &114852635989410700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,7 +1274,7 @@ Transform:
   - {fileID: 5365910282262874290}
   - {fileID: 6703557607658958103}
   m_Father: {fileID: 4098411418399560}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1891970030732051725
 Animator:
@@ -1288,30 +1292,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: '
-
-    Transform ''Left_Toe_Joint_01'' has been deleted
-
-    Transform
-    ''Left_Ankle_Joint_01'' has been deleted
-
-    Transform ''Left_Knee_Joint_01''
-    has been deleted
-
-    Transform ''Left_Thigh_Joint_01'' has been deleted
-
-    Transform
-    ''Right_Toe_Joint_01'' has been deleted
-
-    Transform ''Right_Ankle_Joint_01''
-    has been deleted
-
-    Transform ''Right_Knee_Joint_01'' has been deleted
-
-    Transform
-    ''Right_Thigh_Joint_01'' has been deleted
-
-    Transform ''Hip'' has been deleted'
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -1681,7 +1662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d983adaf49cab5043a65cbd4661d87a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChainLength: 2
+  ChainLength: 3
   Target: {fileID: 4258753728346310}
   Pole: {fileID: 8006155695817719021}
   Iterations: 10

@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class CheckNewVersion : MonoBehaviour
 {
-    string appVersion = "0.0.1";
+    string appVersion = "0.0.2";
     private void Awake()
     {
         StartCoroutine(CheckVersion());
